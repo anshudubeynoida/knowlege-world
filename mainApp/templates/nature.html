@@ -1,0 +1,54 @@
+{% extends 'index.html' %}
+
+{% block title %}
+<title>Eshop | Single Product Page</title>
+{% endblock title %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row my-3">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+            <h5 class="background text-light text-center p-2">Menu</h5>
+            <div class="list-group">
+                <h6 class="background text-light text-center p-1">Subcategory</h6>
+                <a href="/post/All/{{sc}}/{{br}}/" class="list-group-item list-group-item-action">All</a>
+                {% for i in maincategory %}
+                <a href="/post/{{i.name}}/{{sc}}/{{br}}/" class="list-group-item list-group-item-action">{{i.name}}</a>
+                {% endfor %}
+            </div>
+            <!-- <div class="list-group">
+                <h6 class="background text-light text-center p-1">Maincategory</h6>
+                <a href="/life/{{mc}}/All/{{br}}/" class="list-group-item list-group-item-action">All</a>
+                {% for i in subcategory %}
+                <a href="/life/{{mc}}/{{i.name}}/{{br}}/" class="list-group-item list-group-item-action">{{i.name}}</a>
+                {% endfor %}
+            </div> -->
+            <!-- <div class="list-group">
+                <h6 class="background text-light text-center p-1">Brand</h6>
+                <a href="/post/{{mc}}/{{sc}}/All/" class="list-group-item list-group-item-action">All</a>
+                {% for i in brand %}
+                <a href="/post/{{mc}}/{{sc}}/{{i.name}}/" class="list-group-item list-group-item-action">{{i.name}}</a>
+                {% endfor %}
+            </div> -->
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-6 col-12">
+            <h5 class="background text-center text-light p-2">All Post</h5>
+            <div class="row">
+                {% for i in data %}
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <img src="{{i.pic1.url}}" height="250px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <span class="card-badge card-badge-pink">{{i.maincategory}}</span>
+                            <h5 class="card-title">{{i.name}}</h5>
+                            <p class="card-text">{{i.description}}</p>
+                            
+                            <a href="/blog/{{i.posturl}}" class="btn background text-light w-100 btn-sm">Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

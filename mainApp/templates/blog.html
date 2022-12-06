@@ -1,0 +1,202 @@
+{% extends 'index.html' %}
+
+{% block title %}
+<title>Eshop | Single Product Page</title>
+{% endblock title %}
+{% block content %}
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{data.pic2.url}}" height="500px" class=" img-fluid rounded-4 mb-4 d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="{{data.pic2.url}}" height="500px" class=" img-fluid rounded-4 mb-4 d-block w-100" alt="...">
+                    </div>
+                </div>
+                
+                   
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        
+        <div class="col-md-6 col-12">
+            <h5 class="background text-light text-center p-2">{{data.name}}</h5>
+            <div class="table-responsive">
+                
+                <table class="table">
+                    <tr>
+                        <th>Maincategory</th>
+                        <td>{{data.maincategory}}</td>
+                    </tr>
+                    <!-- <tr>
+                        <th>Subcategory</th>
+                        <td>{{data.subcategory}}</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <th>Brand</th>
+                        <td>{{data.brand}}</td>
+                    </tr>
+                    <tr>
+                        <th>Color</th>
+                        <td>{{data.color}}</td>
+                    </tr>
+                    <tr>
+                        <th>Size</th>
+                        <td>{{data.size}}</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <th>url</th>
+                        <td>{{data.posturl}}</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <th>Price</th>
+                        <td>&#8377;<del>{{data.baseprice}}</del><sub>{{data.finalprice}}</sub></td>
+                    </tr>
+                    <tr>
+                        <th>Discount</th>
+                        <td>{{data.discount}}</td>
+                    </tr>
+                    <tr>
+                        <th>Stock</th>
+                        <td>{{data.stock}}</td>
+                    </tr> -->
+                    <tr>
+                        <th>Description</th>
+                        <td>{{data.description}}</td>
+                    </tr>
+                    <!-- <tr>
+                        <th>About This</th>
+                        <td>{{data.paragraph1}}</td>
+                    </tr> -->
+                </table>
+            </div>
+            <h5>Let Know more about it</h5>
+            <p>{{data.paragraph1}}</p>
+        </div>
+    
+        <div class="col-lg-6">
+            <h3>Importance of Full Body Health Checkup </h3>
+            <p class="text-justify">
+                For a complete health checkup, the best place to visit is at a clinic that offers various
+                tests and procedures. The different medical services offered are body checkup, blood tests,
+                x-rays, and physical examinations. A doctor can check a person’s overall health by
+                performing a series of checks including blood analysis, X-ray screening and hearing test.
+                Medical experts also use other techniques to examine the body such as ultrasound and
+                magnetic resonance imaging (MRI) scan. These tests can help detect underlying causes of
+                illness or health problems and lead to more effective treatment.
+
+                By having a complete medical checkup, you can have your health risks assessed. This includes
+                checking for signs of disease such as cancer or heart conditions, taking blood samples for
+                testing, conducting an x-ray or MRI scan, etc. By knowing your health risks, you can take
+                steps to reduce your risk of future disease and improve overall health.
+            </p>
+            <p class="text-justify">Looking for the best full body checkup pathology in Noida? Contact
+                Benekind Diagnostics, a leading Blood Test Lab in Noida offers effective and accurate full
+                body health checkup tests and reports by their skilled and certified pathologists.
+
+                &amp; You can avail of their best pathology services in Noida Sector 44, 55, 61, 62, 76, 77,
+                78 at affordable
+                pricing. </p>
+        </div>
+        <div class="col-lg-6"> <img src="{{data.pic2.url}}" class="img-fluid rounded-4 mb-4"
+                alt="Full Body Checkup in Noida" title="Full Body Checkup in Noida">
+        </div>
+    </div>
+</div>
+
+
+
+
+        <!--start  -->
+        <!-- <div class="row gx-lg-0 gy-4">
+            <div class="col-lg-4">
+                <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                    <div class="info-item d-flex"> 
+                        <div>
+                            <h4>Share This </h4>
+                            <p>Sector 63, Noida, Uttar Pradesh 201301 </p>
+                        </div>
+                    </div>
+                    <div class="info-item d-flex"> <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h4>Email:</h4>
+                            <p><a href="#" class="__cf_email__" style="color:#fff;">info@benekind.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item d-flex"> <i class="bi bi-phone flex-shrink-0"></i>
+                        <div>
+                            <h4>Call:</h4>
+                            <p>(0120) 4139500 </p>
+                            <p>+91 9289322331</p>
+                        </div>
+                    </div>
+                    <div class="info-item d-flex"> <i class="bi bi-clock flex-shrink-0"></i>
+                        <div>
+                            <h4>Open Hours:</h4>
+                            <p>24 hrs/365 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+       
+        <!-- end -->
+        
+        
+        
+            <div class="col-lg-8">
+                <form action="" method="post">
+                                {% csrf_token %}
+                                <h5>Leave your Comment</h5>
+                                <div class="mb-3">
+                                    <!-- <label class="form-label">Name</label> -->
+                                    <input type="text" required name="name" class="form-control" placeholder="Enter Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label class="form-label">Email Address</label> -->
+                                    <input type="email" required name="email" class="form-control" placeholder="Enter Your mail">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label class="form-label">Website</label> -->
+                                    <input type="text" required name="phone" class="form-control" placeholder="Enter Your Website">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label class="form-label">Subject</label> -->
+                                    <input type="text" required name="subject" class="form-control" placeholder="Enter Your Subject">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label class="form-label">Message</label> -->
+                                    <textarea required name="message" rows="5" class="form-control" placeholder="Enter Your Message"></textarea>
+                                </div>
+                                <div class="g-recaptcha" required  data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                                <br>
+                                <button type="submit" class="btn background text-light text-center p-2 w-100">Submit</button>
+                            </form>
+                        </div>
+
+                        
+{% endblock content %}

@@ -1,0 +1,105 @@
+{% extends 'index.html' %}
+
+{% block title %}
+<title>Eshop | Single Product Page</title>
+{% endblock title %}
+{% block content %}
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{data.pic1.url}}" height="500px" class="d-block w-100" alt="...">
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+   
+    <main id="main">
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h1>Full Body Checkup in Noida</h1>
+                    <p>Full Body Checkup in Noida at your home book an appointment <br>
+                        Safe Sample collection. </p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-6"> <img src="img/full-body-1.jpg" class="img-fluid rounded-4 mb-4"
+                            alt="Full Body Checkup Pathology in Noida" title="Full Body Checkup Pathology in Noida">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Full Body Checkup Pathology in Noida </h3>
+                        <p class="text-justify">The body is made up of many organs, with each contributing to different
+                            functions. According to the National Institutes of Health, there are more than 100 organs in
+                            the human body. It’s important to take care of all of them so you can function properly and
+                            stay healthy.
+                            The biggest organ in the body is the skin. It protects us from things like bacteria and UV
+                            rays, regulates our temperature, and helps us feel comfortable. The circulatory system
+                            transports blood throughout the body. The respiratory system transports oxygen through the
+                            lungs. Digestive tract allows food to be broken down in the stomach and intestines before
+                            being released into the rest of the body via feces or urine. Nervous system sends signals
+                            through nerves to control movement, senses, and other functions. Muscular system controls
+                            voluntary movement and digestion, while the reproductive system controls reproduction.
+                            Skeletal system supports our bodies as they grow and develop with age. Endocrine system
+                            consists of glands that release hormones throughout the body that control hormone levels
+                            like thyroid and growth hormones.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Importance of Full Body Health Checkup </h3>
+                        <p class="text-justify">
+                            For a complete health checkup, the best place to visit is at a clinic that offers various
+                            tests and procedures. The different medical services offered are body checkup, blood tests,
+                            x-rays, and physical examinations. A doctor can check a person’s overall health by
+                            performing a series of checks including blood analysis, X-ray screening and hearing test.
+                            Medical experts also use other techniques to examine the body such as ultrasound and
+                            magnetic resonance imaging (MRI) scan. These tests can help detect underlying causes of
+                            illness or health problems and lead to more effective treatment.
+
+                            By having a complete medical checkup, you can have your health risks assessed. This includes
+                            checking for signs of disease such as cancer or heart conditions, taking blood samples for
+                            testing, conducting an x-ray or MRI scan, etc. By knowing your health risks, you can take
+                            steps to reduce your risk of future disease and improve overall health.
+                        </p>
+                        <p class="text-justify">Looking for the best full body checkup pathology in Noida? Contact
+                            Benekind Diagnostics, a leading Blood Test Lab in Noida offers effective and accurate full
+                            body health checkup tests and reports by their skilled and certified pathologists.
+
+                            &amp; You can avail of their best pathology services in Noida Sector 44, 55, 61, 62, 76, 77,
+                            78 at affordable
+                            pricing. </p>
+                    </div>
+                    <div class="col-lg-6"> <img src="static/images/post-8.jpg" class="img-fluid rounded-4 mb-4"
+                            alt="Full Body Checkup in Noida" title="Full Body Checkup in Noida">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+        
+    </div>
+</div>
+{% endblock content %}
